@@ -129,7 +129,7 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 1
 }
 #career {
   padding: 40px 0;
-  background-color: #f8f9fa; /* Light gray background */
+  background-color: #ffffff; /* Light gray background */
 }
 
 .title-line- {
@@ -169,7 +169,7 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 1
         padding: 0 20px;
         margin-bottom: 60px;
     }
-    .career h2{
+    .career-h2{
       color: #4689c8;
     }
     .those-2-blocks{
@@ -178,12 +178,90 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 1
       height: 200px;
       background-color: rgb(231, 245, 253);
       border-radius: 30px;
+      margin-left: 15px;
+      margin-bottom: 10px;
     }
-    .career img{
+    .career-content{
+      position: relative;
+    }
+    .career-img{
       rotate: -5deg;
-      
+      display :inline-block;
+      position: absolute;
+      top: 30px;
+      margin-left:60px;
 
     }
+    .career-text {
+      flex: 1;
+      max-width: 500px;
+      margin-top: 30px;
+      align-items: right;
+      justify-content: right;
+    }
+    
+    .career-text h2 {
+      color: #4689c8;
+      margin-top: 0;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .career-text ul {
+      padding-left: 20px;
+      color: #555;
+      line-height: 1.6;
+      list-style-type: none;
+    }
+    
+    .career-text li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 25px;
+    }
+    
+    .career-text li:before {
+      content: "•";
+      color: #4689c8;
+      font-size: 20px;
+      position: absolute;
+      left: 0;
+      top: -2px;
+    }
+    
+    .career-text p {
+      text-align: left;
+      margin-bottom: 20px;
+      color: #555;
+      line-height: 1.6;
+    }
+    
+    .contact-button {
+      display: inline-block;
+      background-color: #4689c8;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+      border-radius: 50px;
+    }
+    
+    .contact:hover {
+      background-color: #3a76b0;
+    }
+    .career-sub-con{
+      display: inline-block;
+      position: relative;
+
+    }
+    #refer-earn{
+      background-color: rgb(231, 245, 253);
+    }
+    
+
   </style>
 </head>
 <body>
@@ -309,15 +387,45 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 1
            <p> 
         Unlock your potential with personalized career guidance. Our experts help you navigate career choices, identify your strengths,<br> and create a roadmap to success in today's competitive world.
       </p>
+      <div class="career-content">
        <div class="those-2-blocks">
 
       </div><br>
       <div class="those-2-blocks">
 
       </div>
+      <div class="career-sub-con">
+      <div class="career-img">
       <img src="https://debugzone.site/educare/assets/img/others/career-counselling.avif" >
+      </div>
+      <div class="career-text">
       <h2>Your Future Starts Here</h2>
+      <ul>
+            <li>Personalized career assessment and profiling</li>
+            <li>Industry expert guidance and mentorship</li>
+            <li>Education and career roadmap planning</li>
+          </ul>
+          <p>
+            Our career counselling services help students and professionals make informed their education and career paths. We provide comprehensive support to align your passions with the right opportunities.
+          </p>
+          <div class="contact-button"{
+           <a href="#" class="contact-button">CONTACT NOW →</a>
+          }
+      </div>
+      </div>
+      </div>
+
      
+  </section>
+
+  <section id="refer-earn">
+
+    <div class="refer-earn">
+
+      <h1>REFER & EARN</h1>
+
+    </div>
+
   </section>
 
   <!-- Add Bootstrap JS -->
